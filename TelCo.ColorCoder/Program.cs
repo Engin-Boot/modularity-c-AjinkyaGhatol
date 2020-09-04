@@ -20,27 +20,27 @@ namespace TelCo.ColorCoder
             int pairNumber = 4;
             ColorPair testPair1 = new ColorPair(pairNumber);
             Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
-            testPair1.TestColorCode(Color.White, Color.Brown);
+            Test.TestColorCode(testPair1,Color.White, Color.Brown);
             
             pairNumber = 5;
             testPair1.changeByNumber(pairNumber);
             Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
-            testPair1.TestColorCode(Color.White, Color.SlateGray);
+            Test.TestColorCode(testPair1,Color.White, Color.SlateGray);
             
             pairNumber = 23;
             testPair1.changeByNumber(pairNumber);
             Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
-            testPair1.TestColorCode(Color.Violet, Color.Green);
+            Test.TestColorCode(testPair1,Color.Violet, Color.Green);
 
             ColorPair testPair2 = new ColorPair(Color.Yellow, Color.Green);
             pairNumber = ColorCodeData.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
-            testPair2.TestPairNumber(18);
+            Test.TestPairNumber(testPair2,18);
 
             testPair2.changeByColor(Color.Red, Color.Blue);
             pairNumber = ColorCodeData.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
-            testPair2.TestPairNumber(6);
+            Test.TestPairNumber(testPair2,6);
         }
     }
 }

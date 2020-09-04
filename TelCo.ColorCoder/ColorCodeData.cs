@@ -85,5 +85,4 @@ namespace TelCo.ColorCoder
             return (majorIndex * ColorCodeData.colorMapMinor.Length) + (minorIndex + 1);
         }
     }
-
 }

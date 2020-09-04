@@ -7,7 +7,7 @@ namespace TelCo.ColorCoder
         internal Color minorColor;
         internal ColorPair(){ }
         internal ColorPair(int number){
-            ColorPair temp=ColorCodeData.GetColorFromPairNumber(number);
+            ColorPair temp=GetMethods.GetColorFromPairNumber(number);
             this.majorColor = temp.majorColor;
             this.minorColor = temp.minorColor;
         }
@@ -23,7 +23,7 @@ namespace TelCo.ColorCoder
         }
         internal void changeByNumber(int pairNumber)
         {
-            ColorPair temp = ColorCodeData.GetColorFromPairNumber(pairNumber);
+            ColorPair temp = GetMethods.GetColorFromPairNumber(pairNumber);
             this.majorColor = temp.majorColor;
             this.minorColor = temp.minorColor;
         }

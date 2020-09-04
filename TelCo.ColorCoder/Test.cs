@@ -12,7 +12,7 @@ namespace TelCo.ColorCoder
         internal static void TestPairNumber(ColorPair pair, int actual_number)
         {
             int pairNumber_calulated;
-            pairNumber_calulated = ColorCodeData.GetPairNumberFromColor(pair);
+            pairNumber_calulated = GetMethods.GetPairNumberFromColor(pair);
             Debug.Assert(pairNumber_calulated == actual_number);
         }
     }

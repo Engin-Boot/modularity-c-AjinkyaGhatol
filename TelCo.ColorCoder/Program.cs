@@ -33,12 +33,12 @@ namespace TelCo.ColorCoder
             Test.TestColorCode(testPair1,Color.Violet, Color.Green);
 
             ColorPair testPair2 = new ColorPair(Color.Yellow, Color.Green);
-            pairNumber = ColorCodeData.GetPairNumberFromColor(testPair2);
+            pairNumber = GetMethods.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
             Test.TestPairNumber(testPair2,18);
 
             testPair2.changeByColor(Color.Red, Color.Blue);
-            pairNumber = ColorCodeData.GetPairNumberFromColor(testPair2);
+            pairNumber = GetMethods.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
             Test.TestPairNumber(testPair2,6);
         }

@@ -41,6 +41,9 @@ namespace TelCo.ColorCoder
             pairNumber = GetMethods.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
             Test.TestPairNumber(testPair2,6);
+
+            string manual = ColorCodeData.manualToString();
+            Console.WriteLine(manual);
         }
     }
 }

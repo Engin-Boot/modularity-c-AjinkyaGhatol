@@ -2,8 +2,11 @@
 using System.Drawing;
 namespace TelCo.ColorCoder
 {
-     static internal class ColorCodeData
+     static public class ColorCodeData
     {
+        static internal int manualMinSize;
+        static string manualStart = "------------------------------------------------------------------------\n|Pair no.\t\t\t|Major color\t\t|Minor color\t\t|\n------------------------------------------------------------------------\n";
+
         /// <summary>
         /// Array of Major colors
         /// </summary>
@@ -19,10 +22,11 @@ namespace TelCo.ColorCoder
         {
             colorMapMajor = new Color[] { Color.White, Color.Red, Color.Black, Color.Yellow, Color.Violet };
             colorMapMinor = new Color[] { Color.Blue, Color.Orange, Color.Green, Color.Brown, Color.SlateGray };
+            manualMinSize = manualStart.Length;
         }
-        internal static string manualToString()
-        {
-            string manual = "------------------------------------------------------------------------\n|Pair no.\t\t|Major color\t\t|Minor color\t\t|\n------------------------------------------------------------------------\n";
+        public static string manualToString()
+        {   string manual ="";
+            manual += manualStart;
             int pairNumber = 1;
             int minorSize = ColorCodeData.colorMapMinor.Length;
             int majorSize = ColorCodeData.colorMapMajor.Length;

@@ -44,6 +44,7 @@ namespace TelCo.ColorCoder
 
             string manual = ColorCodeData.manualToString();
             Console.WriteLine(manual);
+
         }
     }
 }

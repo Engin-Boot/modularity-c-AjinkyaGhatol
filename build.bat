@@ -1,5 +1,6 @@
 dotnet restore
 dotnet add TelCo.ColorCoder package Microsoft.CodeAnalysis.Metrics --version 3.3.0
+dotnet add Manual.Tests package Microsoft.CodeAnalysis.Metrics --version 3.3.0
 pushd "%~dp0"
 if exist Debug rd /s /q Debug
 if exist Release rd /s /q Release
